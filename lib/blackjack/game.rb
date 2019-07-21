@@ -1,4 +1,3 @@
-require_relative "deck"
 # https://www.rubytapas.com/2017/04/03/episode-473-contextual-identity-part-2/
 
 class Game

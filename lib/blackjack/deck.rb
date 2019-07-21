@@ -1,6 +1,5 @@
 require "ice_nine"
 require "ice_nine/core_ext/object"
-require_relative "card"
 
 CARDS = [["A", "Ace", 1]] +
   (2..10).map { |x| [x.to_s, x.to_s, x] } +
@@ -8,6 +7,14 @@ CARDS = [["A", "Ace", 1]] +
   [["Q", "Queen", 12]] +
   [["K", "King", 13]]
 CARDS.deep_freeze
+
+# https://en.wikipedia.org/wiki/High_card_by_suit
+SPADES = Suit.new("♤", "Spades", 4)
+CLUBS = Suit.new("♧", "Clubs", 1)
+HEARTS = Suit.new("♡", "Hearts", 3)
+DIAMONDS = Suit.new("♢︎", "Diamonds", 2)
+
+SUITS = [SPADES, CLUBS, HEARTS, DIAMONDS]
 
 class Deck
   attr_reader :cards

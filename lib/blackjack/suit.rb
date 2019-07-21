@@ -20,12 +20,3 @@ class Suit
     rank <=> other.rank
   end
 end
-
-# https://en.wikipedia.org/wiki/High_card_by_suit
-SPADES = Suit.new("♤", "Spades", 4)
-CLUBS = Suit.new("♧", "Clubs", 1)
-HEARTS = Suit.new("♡", "Hearts", 3)
-DIAMONDS = Suit.new("♢︎", "Diamonds", 2)
-
-SUITS = [SPADES, CLUBS, HEARTS, DIAMONDS]
-

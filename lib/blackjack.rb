@@ -7,6 +7,4 @@ require "blackjack/turn"
 require "blackjack/game"
 
 module Blackjack
-  class Error < StandardError; end
-  # Your code goes here...
 end
