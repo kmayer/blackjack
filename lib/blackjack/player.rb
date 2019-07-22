@@ -11,4 +11,3 @@ class Player
     name
   end
 end
-

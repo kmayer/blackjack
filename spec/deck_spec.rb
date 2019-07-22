@@ -21,6 +21,7 @@ RSpec.describe Deck do
     card, new_deck = deck.draw
 
     expect(card).to eq(deck.top)
+    expect(card).to be_frozen
     expect(new_deck.count).to eq(deck.count - 1)
   end
 end
