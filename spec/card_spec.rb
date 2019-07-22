@@ -1,7 +1,7 @@
 RSpec.describe Card do
   subject(:card) { Card.new(SPADES, "?", "Stand-in", 0)}
 
-  it "is a value object" do
+  it "is comparable" do
     expect(card).to be_frozen
 
     other = Card.new(SPADES, "?", "Stand-in", 0)
