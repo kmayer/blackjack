@@ -24,7 +24,7 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print (~> 1.8)
-  ice_nine (~> 0.11.2)
+  ice_nine (~> 0.11)
   rake (~> 12.3)
   rspec
 
