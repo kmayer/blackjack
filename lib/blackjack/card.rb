@@ -25,6 +25,6 @@ class Card
   end
 
   def inspect
-    "<Card(#{name} of #{suit.name})>"
+    "#<Card:0x#{object_id.to_s(16)} (#{name} of #{suit.name})>"
   end
 end

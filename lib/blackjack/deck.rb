@@ -12,7 +12,7 @@ CARDS.deep_freeze
 SPADES = Suit.new("♤", "Spades", 4)
 CLUBS = Suit.new("♧", "Clubs", 1)
 HEARTS = Suit.new("♡", "Hearts", 3)
-DIAMONDS = Suit.new("♢︎", "Diamonds", 2)
+DIAMONDS = Suit.new("♢", "Diamonds", 2)
 
 SUITS = [SPADES, CLUBS, HEARTS, DIAMONDS]
 
@@ -22,6 +22,10 @@ class Deck
   def initialize(cards = self.class.default_cards)
     @cards = cards
     deep_freeze
+  end
+
+  def inspect
+    "#<Deck:0x#{object_id.to_s(16)} @cards=(#{count})>"
   end
 
   def self.default_cards
